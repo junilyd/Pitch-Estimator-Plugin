@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="za0Dpa" name="Pitch-Estimator-Plugin" projectType="audioplug"
+              version="1.0.0" bundleIdentifier="com.yourcompany.PitchEstimatorPlugin"
+              includeBinaryInAppConfig="1" buildVST="1" buildVST3="0" buildAU="1"
+              buildRTAS="0" buildAAX="0" pluginName="Pitch-Estimator-Plugin"
+              pluginDesc="Pitch-Estimator-Plugin" pluginManufacturer="yourcompany"
+              pluginManufacturerCode="Manu" pluginCode="Plug" pluginChannelConfigs="{1, 1}, {2, 2}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="PitchEstimatorPluginAU" pluginRTASCategory=""
+              aaxIdentifier="com.yourcompany.PitchEstimatorPlugin" pluginAAXCategory="AAX_ePlugInCategory_Dynamics"
+              jucerVersion="3.1.0">
+  <MAINGROUP id="W9V7a7" name="Pitch-Estimator-Plugin">
+    <GROUP id="{3C98C017-BB82-7039-DA16-52BB88A9FA2B}" name="Source">
+      <FILE id="LiJhye" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="i8tfow" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="JAyiB7" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="ccQf17" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="1" optimisation="1" targetName="Pitch-Estimator-Plugin"/>
+        <CONFIGURATION name="Release" osxSDK="default" osxCompatibility="default" osxArchitecture="default"
+                       isDebug="0" optimisation="2" targetName="Pitch-Estimator-Plugin"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_events" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_graphics" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_data_structures" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_cryptography" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_video" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_opengl" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../MP/JUCE-OSX /modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="../MP/JUCE-OSX /modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
