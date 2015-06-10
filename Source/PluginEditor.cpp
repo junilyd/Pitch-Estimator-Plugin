@@ -24,7 +24,7 @@ PitchestimatorpluginAudioProcessorEditor::PitchestimatorpluginAudioProcessorEdit
     sliderHarmonics.setValue(5);
     
     sliderGain.setSliderStyle (Slider::Rotary);
-    sliderGain.setRange (0.0, 1.0, 0.01);
+    sliderGain.setRange (0.0f, 1.0f, 0.01f);
     sliderGain.setValue(1.0f);
     
     labelHarmonicsKnob.attachToComponent (&sliderHarmonics, false);

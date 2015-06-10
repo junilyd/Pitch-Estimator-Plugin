@@ -81,7 +81,7 @@ public:
     // List of controls parameters
     enum Parameters
     {
-        gainParam = 0,
+        gainParam,
         harmonicParam,
         totalNumParams
     };

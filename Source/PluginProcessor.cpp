@@ -29,7 +29,7 @@ const String PitchestimatorpluginAudioProcessor::getName() const
 
 int PitchestimatorpluginAudioProcessor::getNumParameters()
 {
-    return totalNumParams;
+    return totalNumParams-1;
 }
 
 float PitchestimatorpluginAudioProcessor::getParameter (int index)
@@ -68,7 +68,7 @@ const String PitchestimatorpluginAudioProcessor::getParameterName (int index)
     switch (index)
     {
         case gainParam:     return "gain";
-        case harmonicParam: return "harmonics";
+        case harmonicParam: return "numberOfHarmonics";
         default:            break;
     }
     return String::empty;
